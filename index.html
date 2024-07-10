@@ -9,11 +9,12 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://sungsu-and-soobin.github.io/img/album/thumb.jpg">
     <meta property="og:description" content="2024년 10월 12일 낮 1시 20분 더링크호텔 3층 베일리홀">
-    
+
     <title>초대합니다</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
     <link href="lib/datepicker/css/datepicker.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/gallery.css">
     <style>
         body {
             background-color: #ffffff;
@@ -34,13 +35,13 @@
             src: url("font/BrookeSmith.ttf");
         }
 
-        .container { 
-            padding-right: 15px; 
-            padding-left: 15px; 
-            margin-right: auto; 
+        .container {
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
             margin-left: auto;
         }
-        
+
         .card {
             margin-top: 10px;
             margin-bottom: 10px;
@@ -48,7 +49,7 @@
             text-align: center;
             /* margin-top: 10px; */
             padding: 30px;
-            background: rgb(248, 248, 248);
+            background: rgb(255, 254, 236);
             border-color: #4f64ff00;
             border-radius: 10px;
         }
@@ -65,7 +66,8 @@
             display: block;
             width: 100%;
             height: 400px;
-            background: url('img/album/main.jpg') no-repeat ;
+            background: url('https://sungsu-and-soobin.github.io/img/album/image1.jpg') no-repeat;
+            /* background: url('img/album/main.jpg') no-repeat ; */
             background-size: cover;
             border-radius: 10px;
         }
@@ -82,7 +84,7 @@
             display: block;
             width: 100%;
             height: 200px;
-            background: url('img/album/image1.jpg') no-repeat ;
+            background: url('img/album/image1.jpg') no-repeat;
             background-size: cover;
             border-radius: 10px;
         }
@@ -100,16 +102,37 @@
             font-size: small;
         } */
 
+        .btn-outline {
+            color: #4fbfa8;
+            background-color: #ffffff;
+            border-color: #4fbfa8;
+            font-weight: bold;
+            letter-spacing: 0.05em;
+        }
+
+        .btn-outline {
+            color: #4fbfa8;
+            background-color: #ffffff;
+            border-color: #4fbfa8;
+            font-weight: bold;
+            border-radius: 0;
+        }
+
+        .btn-outline:hover,
+        .btn-outline:active,
+        .btn-outline:focus,
+        .btn-outline.active {
+            background: #4fbfa8;
+            color: #ffffff;
+            border-color: #4fbfa8;
+
+        }
+
+
+
         .invitation-content {
             font-family: '마루부리';
             text-align: center;
-        }
-
-        .gallery img {
-            width: 100%;
-            border-radius: 10px;
-            margin-bottom: 5px;
-            margin-top: 5px;
         }
 
         p {
@@ -119,6 +142,7 @@
         .left {
             text-align: left;
         }
+
         .right {
             text-align: right;
         }
@@ -128,7 +152,7 @@
         }
 
         .note {
-            color:#343434;
+            color: #343434;
             font-size: x-small;
         }
 
@@ -148,8 +172,8 @@
             margin-bottom: 10px;
         }
 
-        .white-background {
-            background-color: white;
+        .clear-bg {
+            background-color: rgba(255, 255, 255, 0);
         }
 
         .main-color {
@@ -159,6 +183,7 @@
         .naver-color {
             background-color: #2DB400;
         }
+
         .kakao-color {
             background-color: #FEE500;
         }
@@ -169,7 +194,7 @@
         }
 
         hr {
-          border-top: 1px solid rgb(234, 234, 234);
+            border-top: 1px solid rgb(234, 234, 234);
         }
     </style>
 </head>
@@ -179,13 +204,13 @@
         <!-- <div class="card white-background"></div> -->
         <div class="main-image">
             <div style="font-family: 'La Paloma', serif;
-                                font-size: x-large;
+                                font-size: large;
                                 font-weight: bold;
-                                margin-top: -140px;
+                                margin-top: -120px;
                                 position: relative;
                                 color: rgb(255, 255, 255);
                                 text-shadow: 3px 3px 1px rgb(255, 208, 0);
-                                z-index: 1;">Better together</div>
+                                z-index: 1;">Wedding Invitation</div>
             <div style="font-family: 'La Paloma', serif;
                                 margin-top: 20px;
                                 font-size: xx-small;
@@ -193,16 +218,18 @@
                                 position: relative;
                                 color: rgb(255, 255, 255);
                                 text-shadow: 3px 3px 1px rgb(255, 208, 0);
-                                z-index: 1;">Since 2021. 02. 22</div>
+                                z-index: 1;">Sungsu and Soobin</div>
         </div>
-        
 
-        <div class="card">
-            <div class="title">박성수 <span style="color: rgb(254, 61, 27);">♥</span> 이수빈</div>
+
+        <div class="card clear-bg">
+            <div class="title">박성수 · 이수빈</div>
+            <hr>
             <p class="small">
-                <span>2024년 10월 12일 <span style="color: blue;"><strong>토요일</strong></span> 낮 1시 20분</span><br>
-                <span>더링크호텔 <strong>3층</strong> 베일리홀</span>
+                <span>2024년 10월 12일 <span style="color: rgb(90, 90, 252);">토요일</span> 낮 1시 20분</span><br>
+                <span>더링크호텔 3층 베일리홀</span>
             </p>
+            <span style="color: rgb(255, 90, 61);">♥</span>
         </div>
 
         <div class="card small">
@@ -222,16 +249,39 @@
                 그 시작이 되는 날, 소중한 분들을 모시고 싶습니다.<br>
             </p>
         </div>
-        
-        <div class="card">
-            <p><span class="medium">박종인 . 주금순</span> <span class="small">의 아들</span> <span class="medium">박성수</span></p>
-            <p><span class="medium">이성식 . 박태자</span> <span class="small">의 딸</span> <span class="medium">이수빈</span></p>
+        <div class="card clear-bg">
+            <hr>
+            <p><span class="medium">박종인 · 주금순</span> <span class="small">의 아들</span> <span class="medium">박성수</span></p>
+            <p><span class="medium">이성식 · 박태자</span> <span class="small">의 딸</span> <span class="medium">이수빈</span></p>
+            <hr>
         </div>
 
-        <!-- <div class="calendar">
-            <input type="text" id="datePicker" class="form-control " value="2019-06-27" />
-        </div> -->
-        <div class="card">
+        <div class="card gallery clear-bg">
+            <div class="title">앨범</div>
+            <hr>
+
+            <div class="image-container">
+                <div class="images">
+                    <div class="imageFlex1">
+                        <a href="img/album/image1.jpg" data-lightbox="wedding-gallery"><img src="img/album/image1.jpg"></a>
+                        <a href="img/album/image2.jpg" data-lightbox="wedding-gallery"><img src="img/album/image2.jpg"></a>
+                    </div>
+                </div>
+                <div class="images">
+                    <div class="imageFlex2">
+                        <a href="img/album/image2.jpg" data-lightbox="wedding-gallery"><img src="img/album/image2.jpg"></a>
+                        <a href="img/album/image2.jpg" data-lightbox="wedding-gallery"><img src="img/album/image2.jpg"></a>
+                        <a href="img/album/image2.jpg" data-lightbox="wedding-gallery"><img src="img/album/image2.jpg"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div><button type="button" class="btn btn-md btn-outline" style="border-radius: 5px;">더보기</button></div>
+
+            <hr>
+        </div>
+
+        <div class="card clear-bg">
             <div class="title">오시는길</div>
             <hr>
             </hr>
@@ -240,8 +290,9 @@
                     <div id="map" style="width: 100%; height: 300px; margin:auto"></div>
                     <code id="snippet" class="snippet"></code>
                 </section>
-                
-                <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=vrs07rcf3f"></script>
+
+                <script type="text/javascript"
+                    src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=vrs07rcf3f"></script>
                 <script id="code">
                     var map = new naver.maps.Map('map', {
                         center: new naver.maps.LatLng(37.5054764049558, 126.883954921318),
@@ -260,61 +311,61 @@
             <div class="sub-title left">지하철 이용</div>
             <p class="left small">
                 <!-- https://blog.naver.com/majeong16/222194207551 -->
-                <span style="color:#0032A0">❶</span><span style="color:#00B140">❷</span> 신도림역 <strong>1번</strong>출구에서 도보 10분<br>
+                <span style="color:#0032A0">❶</span><span style="color:#00B140">❷</span> 신도림역 <strong>1번</strong>출구에서 도보
+                10분<br>
                 <span style="color:#0032A0">❶</span> 구로역 <strong>3번</strong>출구에서 도보 5분<br>
             </p>
             <hr>
             </hr>
-            <div class="sub-title left">주차안내</div>
-            <p class="left small">
-                <span>1시간 30분 무료주차 (초과 시 15분당 1,000원)</span><br>
-                <span class="note">※ 주차장이 혼잡하오니 가급적 대중교통을 이용해주시기 바랍니다.</span>
-            </p>
-            <hr></hr>
             <div class="sub-title left">길찾기</div>
             <p class="left small">
                 도로명: 서울 구로구 경인로 610 더링크호텔 <br>
                 지번: 신도림동 413-9 더링크호텔
             </p>
             <div class="left">
-                <a href="http://naver.me/5pTy3HCa">
+                <a href="https://naver.me/Gq8tACkl">
                     <img class="map-icon" src="img/naver-map.png">
                 </a>
-                <a href="http://naver.me/5pTy3HCa">
+                <a href="https://kko.to/1yxPiIvpLM">
                     <img class="map-icon" src="img/kakao-map.png">
                 </a>
 
             </div>
-            
+        </div>
+        <div class="card clear-bg">
+            <div class="title">안내사항</div>
+            <hr>
+            <div class="sub-title left">주차안내</div>
+            <p class="left small">
+                <span>1시간 30분 무료주차 (초과 시 15분당 1,000원)</span><br>
+                <span class="note">※ 주차장이 혼잡하오니 가급적 대중교통을 이용해주시기 바랍니다.</span>
+            </p>
+            <hr>
+            <div class="sub-title left">포토부스</div>
+            <p class="left small">
+                <span>포토부스가 설치될 예정입니다. 귀한 발걸음 해주신 여러분들의 환한 미소와 따뜻한 말씀 남겨주시면 소중히 간직하도록 하겠습니다.</span><br>
+            </p>
+            <hr>
+            <div class="sub-title left">식사안내</div>
+            <p class="left small">
+                <span>분리예식이며 뷔페로 진행됩니다.</span><br>
+                <span class="note">※ 주류는 <strong>무제한</strong>입니다.</span>
+            </p>
+        </div>
 
-            <!-- <p class="left">
-                <button type="button" class="btn btn-sm naver-color">네이버 지도</button>
-                <button type="button" class="btn btn-sm kakao-color">카카오 지도</button>
-            </p> -->
-            
-            <!-- https://bojagicard.com/wed_hom/doc/item_mall/yakdo_view.php?id=24312 -->
-        </div>
-        <div class="card gallery">
-            <div class="title">갤러리</div>
-            <div class="row">                
-                <div class="col-4">
-                    <a href="img/album/image1.jpg" data-lightbox="wedding-gallery" data-title="뚜비 대신 꽃"><img src="img/album/image1.jpg" alt="Image 2"></a>
-                </div>
-            </div>
-        </div>
         <div class="end-image">
-            <div style="font-family: 'La Paloma', serif;
-                                        font-size: x-large;
+            <div style="font-family: 'brooke', serif;
+                                        font-size: xx-large;
                                         font-weight: bold;
-                                        margin-top: -100px;
+                                        margin-top: -120px;
                                         position: relative;
                                         color: rgb(255, 255, 255);
-                                        text-shadow: 3px 3px 1px rgb(255, 208, 0);
-                                        z-index: 1;">Thank you</div>
+                                        text-shadow: 2px 2px 1px rgb(255, 208, 0);
+                                        z-index: 1;">Better together</div>
         </div>
     </div>
 
-    <script src="lightbox/dist/js/lightbox-plus-jquery.min.js"></script>
+    <script src="lib/lightbox/js/lightbox-plus-jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
@@ -328,58 +379,20 @@
         integrity="sha512-34s5cpvaNG3BknEWSuOncX28vz97bRI59UnVtEEpFX536A7BtZSJHsDyFoCl8S7Dt2TPzcrCEoHBGeM4SUBDBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/locales/bootstrap-datepicker.ko.min.js"
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/locales/bootstrap-datepicker.ko.min.js"
         integrity="sha512-L4qpL1ZotXZLLe8Oo0ZyHrj/SweV7CieswUODAAPN/tnqN3PA1P+4qPu5vIryNor6HQ5o22NujIcAZIfyVXwbQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-
         $(document).ready(() => {
             lightbox.option({
-                'wrapAround': true,
+                'wrapAround': false,
+                'disableScrolling': true,
+                'fadeDuration': 10,
+                'resizeDuration': 0,
+                'imageFadeDuration': 500
             })
-        })
-
-        $('#datePicker')
-            .datepicker({
-                format: 'yyyy-mm-dd', //데이터 포맷 형식(yyyy : 년 mm : 월 dd : 일 )
-                startDate: '-10d', //달력에서 선택 할 수 있는 가장 빠른 날짜. 이전으로는 선택 불가능 ( d : 일 m : 달 y : 년 w : 주)
-                endDate: '+10d', //달력에서 선택 할 수 있는 가장 느린 날짜. 이후로 선택 불가 ( d : 일 m : 달 y : 년 w : 주)
-                autoclose: true, //사용자가 날짜를 클릭하면 자동 캘린더가 닫히는 옵션
-                calendarWeeks: false, //캘린더 옆에 몇 주차인지 보여주는 옵션 기본값 false 보여주려면 true
-                clearBtn: false, //날짜 선택한 값 초기화 해주는 버튼 보여주는 옵션 기본값 false 보여주려면 true
-                datesDisabled: ['2019-06-24', '2019-06-26'], //선택 불가능한 일 설정 하는 배열 위에 있는 format 과 형식이 같아야함.
-                daysOfWeekDisabled: [0, 6], //선택 불가능한 요일 설정 0 : 일요일 ~ 6 : 토요일
-                daysOfWeekHighlighted: [3], //강조 되어야 하는 요일 설정
-                disableTouchKeyboard: false, //모바일에서 플러그인 작동 여부 기본값 false 가 작동 true가 작동 안함.
-                immediateUpdates: false, //사용자가 보는 화면으로 바로바로 날짜를 변경할지 여부 기본값 :false
-                multidate: false, //여러 날짜 선택할 수 있게 하는 옵션 기본값 :false
-                multidateSeparator: ',', //여러 날짜를 선택했을 때 사이에 나타나는 글짜 2019-05-01,2019-06-01
-                templates: {
-                    leftArrow: '&laquo;',
-                    rightArrow: '&raquo;',
-                }, //다음달 이전달로 넘어가는 화살표 모양 커스텀 마이징
-                showWeekDays: true, // 위에 요일 보여주는 옵션 기본값 : true
-                title: '테스트', //캘린더 상단에 보여주는 타이틀
-                todayHighlight: true, //오늘 날짜에 하이라이팅 기능 기본값 :false
-                toggleActive: true, //이미 선택된 날짜 선택하면 기본값 : false인경우 그대로 유지 true인 경우 날짜 삭제
-                weekStart: 0, //달력 시작 요일 선택하는 것 기본값은 0인 일요일
-                language: 'ko', //달력의 언어 선택, 그에 맞는 js로 교체해줘야한다.
-            })
-            .on('changeDate', function (e) {
-                /* 이벤트의 종류 */
-                //show : datePicker가 보이는 순간 호출
-                //hide : datePicker가 숨겨지는 순간 호출
-                //clearDate: clear 버튼 누르면 호출
-                //changeDate : 사용자가 클릭해서 날짜가 변경되면 호출 (개인적으로 가장 많이 사용함)
-                //changeMonth : 월이 변경되면 호출
-                //changeYear : 년이 변경되는 호출
-                //changeCentury : 한 세기가 변경되면 호출 ex) 20세기에서 21세기가 되는 순간
-
-                console.log(e);
-                // e.date를 찍어보면 Thu Jun 27 2019 00:00:00 GMT+0900 (한국 표준시) 위와 같은 형태로 보인다.
-            });
-
-            
+        })  
     </script>
 </body>
 
