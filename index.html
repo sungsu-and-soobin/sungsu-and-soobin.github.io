@@ -1,399 +1,480 @@
 <!DOCTYPE html>
 <html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:url" content="https://sungsu-and-soobin.github.io" />
+        <meta property="og:title" content="성수❤️수빈 결혼합니다" />
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:image"
+            content="https://sungsu-and-soobin.github.io/img/album/thumb.jpg"
+        />
+        <meta
+            property="og:description"
+            content="2024년 10월 12일 낮 1시 20분 더링크호텔 3층 베일리홀"
+        />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:url" content="https://sungsu-and-soobin.github.io">
-    <meta property="og:title" content="성수❤️수빈 결혼합니다">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://sungsu-and-soobin.github.io/img/album/thumb.jpg">
-    <meta property="og:description" content="2024년 10월 12일 낮 1시 20분 더링크호텔 3층 베일리홀">
+        <title>초대합니다</title>
+        <link
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/gallery.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
 
-    <title>초대합니다</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-    <link href="lib/datepicker/css/datepicker.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/gallery.css">
-    <style>
-        body {
-            background-color: #ffffff;
-        }
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <style>
+            body {
+                background-color: #ffffff;
+            }
 
-        @font-face {
-            font-family: "La Paloma";
-            src: url("font/LaPaloma.ttf");
-        }
+            @font-face {
+                font-family: "La Paloma";
+                src: url("font/LaPaloma.ttf");
+            }
 
-        @font-face {
-            font-family: "마루부리";
-            src: url("font/MaruBuri.otf");
-        }
+            @font-face {
+                font-family: "마루부리";
+                src: url("font/MaruBuri.otf");
+            }
 
-        @font-face {
-            font-family: "brooke";
-            src: url("font/BrookeSmith.ttf");
-        }
+            @font-face {
+                font-family: "brooke";
+                src: url("font/BrookeSmith.ttf");
+            }
 
-        .container {
-            padding-right: 15px;
-            padding-left: 15px;
-            margin-right: auto;
-            margin-left: auto;
-        }
+            .hideme {
+                opacity: 0;
+            }
 
-        .card {
-            margin-top: 10px;
-            margin-bottom: 10px;
-            font-family: '마루부리';
-            text-align: center;
-            /* margin-top: 10px; */
-            padding: 30px;
-            background: rgb(255, 254, 236);
-            border-color: #4f64ff00;
-            border-radius: 10px;
-        }
+            .container {
+                width: 440px;
+                padding-right: 15px;
+                padding-left: 15px;
+                margin-right: auto;
+                margin-left: auto;
+            }
 
-        .main-image {
-            text-align: center;
-            margin-top: 10px;
-            margin-bottom: 80px;
-            position: relative;
-        }
+            .card {
+                /* margin-top: 10px; */
+                /* margin-bottom: 10px; */
+                font-family: "마루부리";
+                text-align: center;
+                padding-left: 10px;
+                padding-right: 10px;
+                background: rgb(255, 255, 255);
+                border-color: #4f64ff00;
+                border-radius: 10px;
+            }
 
-        .main-image::before {
-            content: "";
-            display: block;
-            width: 100%;
-            height: 400px;
-            background: url('https://sungsu-and-soobin.github.io/img/album/image1.jpg') no-repeat;
-            /* background: url('img/album/main.jpg') no-repeat ; */
-            background-size: cover;
-            border-radius: 10px;
-        }
+            .card div {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
 
-        .end-image {
-            text-align: center;
-            margin-top: 10px;
-            margin-bottom: 80px;
-            position: relative;
-        }
+            .main-image {
+                text-align: center;
+                margin-top: 10px;
+                margin-bottom: 80px;
+                position: relative;
+            }
 
-        .end-image::before {
-            content: "";
-            display: block;
-            width: 100%;
-            height: 200px;
-            background: url('img/album/image1.jpg') no-repeat;
-            background-size: cover;
-            border-radius: 10px;
-        }
+            .main-image::before {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 600px;
+                /* background: url('https://sungsu-and-soobin.github.io/img/album/image1.jpg') no-repeat; */
+                background: url("img/main.jpg") no-repeat;
+                background-size: cover;
+                border-radius: 5px;
+                border-top-left-radius: 250px;
+                border-top-right-radius: 250px;
+            }
 
-        /* .main-image h1 {
-            font-family: 'brooke', serif;
-            font-weight: bold;
-            margin-top: -140px;
-            position: relative;
-            z-index: 1;
-        }
+            .end-image {
+                text-align: center;
+                margin-top: 10px;
+                margin-bottom: 80px;
+                position: relative;
+            }
 
-        .main-image p {
-            font-family: 'La Paloma', serif;
-            font-size: small;
-        } */
+            .end-image::before {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 280px;
+                background: url("img/end.jpg") no-repeat;
+                background-size: cover;
+                border-radius: 10px;
+            }
 
-        .btn-outline {
-            color: #4fbfa8;
-            background-color: #ffffff;
-            border-color: #4fbfa8;
-            font-weight: bold;
-            letter-spacing: 0.05em;
-        }
+            .invitation-content {
+                font-family: "마루부리";
+                text-align: center;
+            }
 
-        .btn-outline {
-            color: #4fbfa8;
-            background-color: #ffffff;
-            border-color: #4fbfa8;
-            font-weight: bold;
-            border-radius: 0;
-        }
+            p {
+                line-height: 2.1;
+            }
 
-        .btn-outline:hover,
-        .btn-outline:active,
-        .btn-outline:focus,
-        .btn-outline.active {
-            background: #4fbfa8;
-            color: #ffffff;
-            border-color: #4fbfa8;
+            .left {
+                text-align: left;
+            }
 
-        }
+            .right {
+                text-align: right;
+            }
 
+            .small {
+                font-size: small;
+            }
 
+            .note {
+                color: #343434;
+                font-size: x-small;
+            }
 
-        .invitation-content {
-            font-family: '마루부리';
-            text-align: center;
-        }
+            .medium {
+                font-size: medium;
+            }
 
-        p {
-            line-height: 2.1;
-        }
+            .title {
+                font-size: large;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
 
-        .left {
-            text-align: left;
-        }
+            .sub-title {
+                font-size: medium;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
 
-        .right {
-            text-align: right;
-        }
+            .red {
+                color: rgb(255, 90, 61);
+            }
 
-        .small {
-            font-size: small;
-        }
+            .naver-color {
+                background-color: #2db400;
+            }
 
-        .note {
-            color: #343434;
-            font-size: x-small;
-        }
+            .kakao-color {
+                background-color: #fee500;
+            }
 
-        .medium {
-            font-size: medium;
-        }
+            .map-icon {
+                margin: 5px;
+                height: 40px;
+            }
 
-        .title {
-            font-size: large;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
+            hr {
+                border-top: 1px solid rgb(234, 234, 234);
+            }
 
-        .sub-title {
-            font-size: medium;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
+            .swiper {
+                padding-left: 10px;
+                padding-right: 10px;
+                width: 100%;
+                height: auto;
+            }
 
-        .clear-bg {
-            background-color: rgba(255, 255, 255, 0);
-        }
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #b4b4b400;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
 
-        .main-color {
-            color: #009acd;
-        }
+            .swiper-slide img {
+                display: block;
+                width: 100%;
+                /* height: 100%; */
+                object-fit: cover;
+            }
 
-        .naver-color {
-            background-color: #2DB400;
-        }
+            .swiper-slide {
+                width: 100%;
+            }
 
-        .kakao-color {
-            background-color: #FEE500;
-        }
+            .swiper img {
+                border-radius: 3px;
+                width: 100%;
+                display: block;
+            }
 
-        .map-icon {
-            margin: 5px;
-            height: 40px;
-        }
+            .swiper div {
+                padding-top: 0px;
+                padding-bottom: 0px;
+            }
+        </style>
+    </head>
 
-        hr {
-            border-top: 1px solid rgb(234, 234, 234);
-        }
-    </style>
-</head>
-
-<body>
-    <div class="container">
-        <!-- <div class="card white-background"></div> -->
-        <div class="main-image">
-            <div style="font-family: 'La Paloma', serif;
-                                font-size: large;
-                                font-weight: bold;
-                                margin-top: -120px;
-                                position: relative;
-                                color: rgb(255, 255, 255);
-                                text-shadow: 3px 3px 1px rgb(255, 208, 0);
-                                z-index: 1;">Wedding Invitation</div>
-            <div style="font-family: 'La Paloma', serif;
-                                margin-top: 20px;
-                                font-size: xx-small;
-                                font-weight: bold;
-                                position: relative;
-                                color: rgb(255, 255, 255);
-                                text-shadow: 3px 3px 1px rgb(255, 208, 0);
-                                z-index: 1;">Sungsu and Soobin</div>
-        </div>
-
-
-        <div class="card clear-bg">
-            <div class="title">박성수 · 이수빈</div>
-            <hr>
-            <p class="small">
-                <span>2024년 10월 12일 <span style="color: rgb(90, 90, 252);">토요일</span> 낮 1시 20분</span><br>
-                <span>더링크호텔 3층 베일리홀</span>
-            </p>
-            <span style="color: rgb(255, 90, 61);">♥</span>
-        </div>
-
-        <div class="card small">
-            <p>
-                3년 전 수줍던 떨림은<br>
-                가슴 벅차던 여러 계절을 지나<br>
-                따뜻하고 편안한 사랑이 되었습니다.<br>
-            </p>
-            <!-- <p>
-                <strong>
-                "오늘의 행복은 우리가 쌓아온 선택들이 만들어낸 결과잖아.<br>
-                지금 이 감정을 기억하며 앞으로도 미래를 후회없이 만들어가자."<br>
-                </strong>
-            </p> -->
-            <p>
-                이제 함께 미래를 만들어가고자 합니다.<br>
-                그 시작이 되는 날, 소중한 분들을 모시고 싶습니다.<br>
-            </p>
-        </div>
-        <div class="card clear-bg">
-            <hr>
-            <p><span class="medium">박종인 · 주금순</span> <span class="small">의 아들</span> <span class="medium">박성수</span></p>
-            <p><span class="medium">이성식 · 박태자</span> <span class="small">의 딸</span> <span class="medium">이수빈</span></p>
-            <hr>
-        </div>
-
-        <div class="card gallery clear-bg">
-            <div class="title">앨범</div>
-            <hr>
-
-            <div class="image-container">
-                <div class="images">
-                    <div class="imageFlex1">
-                        <a href="img/album/image1.jpg" data-lightbox="wedding-gallery"><img src="img/album/image1.jpg"></a>
-                        <a href="img/album/image2.jpg" data-lightbox="wedding-gallery"><img src="img/album/image2.jpg"></a>
+    <body>
+        <div class="container">
+            <!-- <div class="card white-background"></div> -->
+            <div class="card">
+                <div class="main-image">
+                    <div
+                        style="
+                            font-family: 'La Paloma', serif;
+                            font-size: large;
+                            font-weight: bold;
+                            margin-top: -120px;
+                            position: relative;
+                            color: rgb(255, 255, 255);
+                            /* text-shadow: 2px 2px 1px rgb(42, 42, 42); */
+                            z-index: 1;
+                        "
+                    >
+                        Wedding Invitation
                     </div>
-                </div>
-                <div class="images">
-                    <div class="imageFlex2">
-                        <a href="img/album/image2.jpg" data-lightbox="wedding-gallery"><img src="img/album/image2.jpg"></a>
-                        <a href="img/album/image2.jpg" data-lightbox="wedding-gallery"><img src="img/album/image2.jpg"></a>
-                        <a href="img/album/image2.jpg" data-lightbox="wedding-gallery"><img src="img/album/image2.jpg"></a>
+                    <div
+                        style="
+                            font-family: 'La Paloma', serif;
+                            margin-top: 20px;
+                            font-size: xx-small;
+                            font-weight: bold;
+                            position: relative;
+                            color: rgb(255, 255, 255);
+                            /* text-shadow: 3px 3px 1px rgb(255, 208, 0); */
+                            z-index: 1;
+                        "
+                    >
+                        Sungsu and Soobin
                     </div>
                 </div>
             </div>
 
-            <div><button type="button" class="btn btn-md btn-outline" style="border-radius: 5px;">더보기</button></div>
-
-            <hr>
-        </div>
-
-        <div class="card clear-bg">
-            <div class="title">오시는길</div>
-            <hr>
-            </hr>
-            <div style="margin-bottom: 10px;">
-                <section class="section" id="section-3">
-                    <div id="map" style="width: 100%; height: 300px; margin:auto"></div>
-                    <code id="snippet" class="snippet"></code>
-                </section>
-
-                <script type="text/javascript"
-                    src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=vrs07rcf3f"></script>
-                <script id="code">
-                    var map = new naver.maps.Map('map', {
-                        center: new naver.maps.LatLng(37.5054764049558, 126.883954921318),
-                        zoom: 16
-                    });
-
-                    var marker = new naver.maps.Marker({
-                        position: new naver.maps.LatLng(37.5054764049558, 126.883954921318),
-                        map: map
-                    });
-                </script>
-
+            <div class="card">
+                <span class="red">♥</span>
+                <div class="title">박성수 · 이수빈</div>
+                <hr />
+                <div class="small">
+                    <span>2024년 10월 12일 토요일 낮 1시 20분</span>
+                </div>
+                <div class="small"><span>더링크호텔 3층 베일리홀</span></div>
+                <hr />
             </div>
-            <hr>
-            </hr>
-            <div class="sub-title left">지하철 이용</div>
-            <p class="left small">
-                <!-- https://blog.naver.com/majeong16/222194207551 -->
-                <span style="color:#0032A0">❶</span><span style="color:#00B140">❷</span> 신도림역 <strong>1번</strong>출구에서 도보
-                10분<br>
-                <span style="color:#0032A0">❶</span> 구로역 <strong>3번</strong>출구에서 도보 5분<br>
-            </p>
-            <hr>
-            </hr>
-            <div class="sub-title left">길찾기</div>
-            <p class="left small">
-                도로명: 서울 구로구 경인로 610 더링크호텔 <br>
-                지번: 신도림동 413-9 더링크호텔
-            </p>
-            <div class="left">
-                <a href="https://naver.me/Gq8tACkl">
-                    <img class="map-icon" src="img/naver-map.png">
-                </a>
-                <a href="https://kko.to/1yxPiIvpLM">
-                    <img class="map-icon" src="img/kakao-map.png">
-                </a>
+            <div class="card small center">
+                <p>
+                    <span style="font-size: x-large">❝</span><br />
+                    <i>최고의 사랑은 영혼을 일깨우고</i><br />
+                    <i>더 많이 소망하게 하고</i><br />
+                    <i>가슴에는 열정을, 마음에는 평화를 주지</i><br />
+                    <span class="right" style="font-size: x-small"
+                        ><i>- 영화 노트북 -</i></span
+                    ><br />
+                    <span style="font-size: x-large">❞</span><br />
+                </p>
+                <p>
+                    더 넓은 세상을 함께 바라보며,<br />
+                    지치지 않고 더 큰 꿈을 꾸도록<br />
+                    언제나 곁에서 응원하고 싶은<br />
+                    빛나는 인연을 만났습니다.<br />
+                </p>
+                <p>
+                    저희 두 사람 이제 결혼합니다.<br />
+                    그 시작이 되는 날, 소중한 분들을 모시고 싶습니다.<br />
+                </p>
+            </div>
+            <div class="card">
+                <hr />
+                <div>
+                    <span class="medium">박종인 · 주금순</span>
+                    <span class="small">의 아들</span>
+                    <span class="medium">박성수</span>
+                </div>
+                <div>
+                    <span class="medium">이성식 · 박태자</span>
+                    <span class="small">의 딸</span>
+                    <span class="medium">이수빈</span>
+                </div>
+                <hr />
+            </div>
 
+            <!-- 앨범 -->
+            <div class="card" style="padding-top: 30px">
+                <div class="title">앨범</div>
+                <div class="swiper">
+                    <div id="gallery" class="swiper-wrapper">
+                        <!-- add by script -->
+                    </div>
+                </div>
+                <hr />
+            </div>
+
+            <div class="card" style="padding-top: 30px">
+                <div class="title">오시는길</div>
+                <div style="margin-bottom: 10px">
+                    <section class="section" id="section-3">
+                        <div
+                            id="map"
+                            style="width: 100%; height: 300px; margin: auto"
+                        ></div>
+                        <code id="snippet" class="snippet"></code>
+                    </section>
+
+                    <script
+                        type="text/javascript"
+                        src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=vrs07rcf3f"
+                    ></script>
+                    <script id="code">
+                        var map = new naver.maps.Map("map", {
+                            center: new naver.maps.LatLng(
+                                37.5054764049558,
+                                126.883954921318
+                            ),
+                            zoom: 16,
+                        });
+
+                        var marker = new naver.maps.Marker({
+                            position: new naver.maps.LatLng(
+                                37.5054764049558,
+                                126.883954921318
+                            ),
+                            map: map,
+                        });
+                    </script>
+                </div>
+
+                <hr />
+                <div class="sub-title left">지하철 이용</div>
+                <p class="left small">
+                    <!-- https://blog.naver.com/majeong16/222194207551 -->
+                    <span style="color: #0032a0">❶</span
+                    ><span style="color: #00b140">❷</span> 신도림역
+                    <strong>1번</strong>출구에서 도보 10분<br />
+                    <span style="color: #0032a0">❶</span> 구로역
+                    <strong>3번</strong>출구에서 도보 5분<br />
+                </p>
+                <hr />
+
+                <div class="sub-title left">길찾기</div>
+                <p class="left small">
+                    도로명: 서울 구로구 경인로 610 더링크호텔 <br />
+                    지번: 신도림동 413-9 더링크호텔
+                </p>
+                <div class="left">
+                    <a href="https://naver.me/Gq8tACkl">
+                        <img class="map-icon" src="img/map/naver-map.png" />
+                    </a>
+                    <a href="https://kko.to/1yxPiIvpLM">
+                        <img class="map-icon" src="img/map/kakao-map.png" />
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="title">안내사항</div>
+                <hr />
+                <div class="sub-title left">주차안내</div>
+                <p class="left small">
+                    <span>1시간 30분 무료주차 (초과 시 15분당 1,000원)</span
+                    ><br />
+                    <span class="note"
+                        >※ 주차장이 혼잡하오니 가급적 대중교통을 이용해주시기
+                        바랍니다.</span
+                    >
+                </p>
+                <hr />
+                <div class="sub-title left">포토부스</div>
+                <p class="left small">
+                    <span
+                        >포토부스가 설치될 예정입니다. 귀한 발걸음 해주신
+                        여러분들의 환한 미소와 따뜻한 말씀 남겨주시면 소중히
+                        간직하도록 하겠습니다.</span
+                    ><br />
+                </p>
+                <hr />
+                <div class="sub-title left">식사안내</div>
+                <p class="left small">
+                    <span>분리예식이며 뷔페로 진행됩니다.</span><br />
+                    <span class="note"
+                        >※ 주류는 <strong>무제한</strong>입니다.</span
+                    >
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="end-image" style="padding-bottom: 100px">
+                    <div
+                        id="dday"
+                        style="
+                            font-family: 'brooke', serif;
+                            font-size: xx-large;
+                            font-weight: bold;
+                            margin-top: -170px;
+                            position: relative;
+                            color: rgb(255, 255, 255);
+                            /* text-shadow: 2px 2px 1px rgb(255, 208, 0); */
+                            z-index: 1;
+                        "
+                    ></div>
+                </div>
+                <hr />
+            </div>
+
+            <div class="card">
+                <div class="note right">- 성수가 디자인하고 개발함</div>
             </div>
         </div>
-        <div class="card clear-bg">
-            <div class="title">안내사항</div>
-            <hr>
-            <div class="sub-title left">주차안내</div>
-            <p class="left small">
-                <span>1시간 30분 무료주차 (초과 시 15분당 1,000원)</span><br>
-                <span class="note">※ 주차장이 혼잡하오니 가급적 대중교통을 이용해주시기 바랍니다.</span>
-            </p>
-            <hr>
-            <div class="sub-title left">포토부스</div>
-            <p class="left small">
-                <span>포토부스가 설치될 예정입니다. 귀한 발걸음 해주신 여러분들의 환한 미소와 따뜻한 말씀 남겨주시면 소중히 간직하도록 하겠습니다.</span><br>
-            </p>
-            <hr>
-            <div class="sub-title left">식사안내</div>
-            <p class="left small">
-                <span>분리예식이며 뷔페로 진행됩니다.</span><br>
-                <span class="note">※ 주류는 <strong>무제한</strong>입니다.</span>
-            </p>
-        </div>
 
-        <div class="end-image">
-            <div style="font-family: 'brooke', serif;
-                                        font-size: xx-large;
-                                        font-weight: bold;
-                                        margin-top: -120px;
-                                        position: relative;
-                                        color: rgb(255, 255, 255);
-                                        text-shadow: 2px 2px 1px rgb(255, 208, 0);
-                                        z-index: 1;">Better together</div>
-        </div>
-    </div>
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+            integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(() => {
+                const swiper = new Swiper(".swiper", {
+                    centeredSlides: true,
+                    // Optional parameters
+                    direction: "horizontal",
+                    loop: true,
+                    spaceBetween: 30,
+                    autoHeight: true,
+                    depth: 100,
+                    modifier: 1,
+                    rotate: 50,
+                    scale: 1,
+                    slideShadow: true,
+                    stretch: 0,
+                });
 
-    <script src="lib/lightbox/js/lightbox-plus-jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                addImage([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]);
+                $("#dday").text(`D-${calculateDday()}`);
+            });
 
+            function addImage(images = []) {
+                images.forEach((it) => {
+                    $("#gallery").append(
+                        `<div class="swiper-slide">
+                        <img src="img/album/${it}.jpg" />
+                    </div>`
+                    );
+                });
+            }
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js"
-        integrity="sha512-LsnSViqQyaXpD4mBBdRYeP6sRwJiJveh2ZIbW41EBrNmKxgr/LFZIiWT6yr+nycvhvauz8c2nYMhrP80YhG7Cw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            function calculateDday(now = new Date()) {
+                const year = now.getFullYear();
+                const month = now.getMonth();
+                const date = now.getDate();
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker.min.css"
-        integrity="sha512-34s5cpvaNG3BknEWSuOncX28vz97bRI59UnVtEEpFX536A7BtZSJHsDyFoCl8S7Dt2TPzcrCEoHBGeM4SUBDBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/locales/bootstrap-datepicker.ko.min.js"
-        integrity="sha512-L4qpL1ZotXZLLe8Oo0ZyHrj/SweV7CieswUODAAPN/tnqN3PA1P+4qPu5vIryNor6HQ5o22NujIcAZIfyVXwbQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-        $(document).ready(() => {
-            lightbox.option({
-                'wrapAround': false,
-                'disableScrolling': true,
-                'fadeDuration': 10,
-                'resizeDuration': 0,
-                'imageFadeDuration': 500
-            })
-        })  
-    </script>
-</body>
-
+                const oneDay = 24 * 60 * 60 * 1000;
+                const today = new Date(year, month, date);
+                console.log(today);
+                const dday = new Date(2024, 9, 12);
+                console.log(dday);
+                return Math.round(Math.abs((today - dday) / oneDay));
+            }
+        </script>
+    </body>
 </html>
