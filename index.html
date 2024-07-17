@@ -63,6 +63,7 @@
             }
 
             .container {
+                max-width: 500px;
                 padding-right: 5px;
                 padding-left: 5px;
                 margin-right: auto;
@@ -324,6 +325,9 @@
                         <!-- add by script -->
                     </div>
                 </div>
+                <!-- <div class="swiper-button-prev"></div> -->
+                <!-- <div class="swiper-button-next"></div> -->
+
                 <hr />
             </div>
 
@@ -456,14 +460,19 @@
                     // Optional parameters
                     direction: "horizontal",
                     loop: true,
-                    spaceBetween: 30,
+                    spaceBetween: 60,
                     autoHeight: true,
                     depth: 100,
                     modifier: 1,
                     rotate: 50,
                     scale: 1,
-                    slideShadow: true,
+                    slideShadow: false,
                     stretch: 0,
+                    allowTouchMove: true,
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev'
+                    },
                     zoom: {
                       maxRatio: 3,
                       minRatio: 1
