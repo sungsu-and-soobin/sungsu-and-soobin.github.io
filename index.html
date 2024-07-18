@@ -97,11 +97,10 @@
             .main-image::before {
                 content: "";
                 display: block;
-                width: 100%;
                 height: 600px;
-                /* background: url('https://sungsu-and-soobin.github.io/img/album/image1.jpg') no-repeat; */
                 background: url("img/main.jpg") no-repeat;
                 background-size: cover;
+                background-position: center;
                 border-radius: 5px;
                 border-top-left-radius: 250px;
                 border-top-right-radius: 250px;
@@ -459,14 +458,13 @@
                     centeredSlides: true,
                     // Optional parameters
                     direction: "horizontal",
-                    loop: true,
+                    loop: false,
                     spaceBetween: 60,
-                    autoHeight: true,
+                    autoHeight: false,
                     depth: 100,
                     modifier: 1,
-                    rotate: 50,
                     scale: 1,
-                    slideShadow: false,
+                    // effect: 'cards',
                     stretch: 0,
                     allowTouchMove: true,
                     navigation: {
@@ -485,9 +483,20 @@
 
             function addImage(images = []) {
                 images.forEach((it) => {
+                    // 	https://sungsu-and-soobin.github.io/img/album/1.jpg
+                    // $("#gallery").append(
+                    //     `<div class="swiper-slide"><div class="swiper-zoom-container">
+                    //     <img src="img/album/${it}.jpg" loading="lazy" />
+                    //     <div class="swiper-lazy-preloader"></div>
+                    //     </div>
+                    // </div>`
+                    // );
+
                     $("#gallery").append(
                         `<div class="swiper-slide"><div class="swiper-zoom-container">
-                        <img src="img/album/${it}.jpg" /></div>
+                        <img src="img/album/${it}.jpg" loading="lazy" />
+                        <div class="swiper-lazy-preloader-white"></div>
+                        </div>
                     </div>`
                     );
                 });
