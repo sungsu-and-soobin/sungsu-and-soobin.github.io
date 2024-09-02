@@ -223,7 +223,6 @@
             .swiper-slide img {
                 display: block;
                 width: 100%;
-                
                 object-fit: cover;
             }
 
@@ -258,6 +257,24 @@
           
         </script>
         <div class="container">
+            <div class="popup-wrap" style="position: fixed;">
+              <div class="inner" style="max-width: 400px">
+                <div class="top">
+                  <p></p>
+                  <button class="btn__close popup_close"></button>
+                </div>
+
+        
+                <!-- 팝업 슬라이더 -->
+                <div class="swiper-container slider-popup" >
+                  <div class="swiper-wrapper" id="gallery-detail">
+                  </div>
+                </div>
+
+           
+              </div>
+            </div>
+        
             <div class="main-image">
                 <img src="img/main.jpg" width="100%" height="100%">
             </div>
@@ -432,8 +449,7 @@
                 </div>
                 <hr>
             </div>
-           
-            <div class="end-image" style="padding-top: 70px; padding-bottom: 50px;">
+            <div class="end-image" style="padding-top: 40px; padding-bottom: 50px;">
                 <div
                     id="dday"
                     style="
@@ -448,27 +464,10 @@
                     "
                 ></div>
             </div>
-            
-        </div>
 
-        
-        
-         <div class="popup-wrap" style="position: fixed;">
-          <div class="inner">
-            <div class="top">
-              <p></p>
-              <button class="btn__close popup_close"></button>
+            <div class="card main-color" style="padding-top: 0px; padding-bottom: 80px">
+                <div class="right main">성수가 디자인하고 개발함</div>
             </div>
-
-        
-            <!-- 팝업 슬라이더 -->
-            <div class="swiper-container slider-popup" >
-              <div class="swiper-wrapper" id="gallery-detail">
-              </div>
-            </div>
-
-           
-          </div>
         </div>
 
         <script
@@ -539,13 +538,17 @@
                     var fileName = `img/album/${it}.jpeg`
 
                     $("#gallery").append(
-                        `<div class="swiper-slide"><img style="border-radius: 3px;" src="${fileName}"/></div></div>`
+                        `<div class="swiper-slide"><img class="gallery-img" style="border-radius: 3px;" src="${fileName}"; width="73px"; height="109px"/></div></div>`
                     );
 
                     $("#gallery-detail").append(
                         `<div class="swiper-slide"><img src="${fileName}"/></div></div>`
                     );
                 });
+
+                $(".gallery-img").each((i,e) => {
+                    console.log($(e).height())
+                })
             }
 
             function getDday(now = new Date()) {
@@ -562,7 +565,7 @@
 
                 var dDay = Math.round((today - dday) / oneDay);
                 if (dDay == 0) {
-                    return `I love you Soobin.`
+                    return `Today is the day!`
                 } else if (dDay > 0) {
                     return `D+${Math.abs(dDay)}`
                 } else {
